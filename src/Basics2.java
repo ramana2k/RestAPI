@@ -17,10 +17,15 @@ public class Basics2 {
 						+ "\"address\": \"48 Pirrama Road, Pyrmont, NSW 2009, Australia\","
 						+ "\"types\": [\"shoe_store\"]," + "\"website\": \"http://www.google.com.au/\","
 						+ "\"language\": \"en-AU\"" + "}")
-				.when().post("/maps/api/place/add/json").then().assertThat().statusCode(200).and()
-				.contentType(ContentType.JSON).and().body("status", equalTo("OK"));
+				.when().post("/maps/api/place/add/json").
+				then().
+				assertThat().statusCode(200).and()
+				.contentType(ContentType.JSON).and().
+				body("status",equalTo("OK"));
+				
 
 		// Create a place =response (place id)
+		
 
 		// delete Place = (Request - Place id)
 
