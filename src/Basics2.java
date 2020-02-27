@@ -25,8 +25,6 @@ public class Basics2 {
 				
 
 		// Create a place =response (place id)
-		
-
 		// delete Place = (Request - Place id)
 
 	}
